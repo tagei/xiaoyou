@@ -1,0 +1,54 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+
+	<title>小柚官网</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="left" id="left">
+	<span class="leftlogo">
+		<a href="#"><img src="img_files/logo .png" _link="main.html"></a>
+	</span>
+	<div class="leftmenu">
+		<ul>
+			<span>
+				<ul>
+					<li class="menuli"><a href="#" _link="quwei.html">柚点趣味</a></li>
+					<li><a href="#" >柚点趣人</a></li>
+					<li><a href="#">柚点趣事</a></li>
+					<li><a href="#">柚园计划</a></li>
+					<li><a href="#">柚个坐标</a></li>
+				</ul>
+			</span>
+
+		</ul>
+	</div>
+</div>
+	<div class="right">
+<div class="content">
+	<h1></h1>	
+</div>
+<div class="center">
+	<ul>
+		<li><a href="#" title="iOS下载"><img src="img_files/apple.png"></a></li>
+		<li><a href="#" title="android下载"><img src="img_files/android.png"></a></li>
+		<li><a href="#" title="weixin下载"><img src="img_files/weixin.png"></a></li>
+	</ul>
+</div>
+</div>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script>
+$(function(){
+	$('#left li').mouseover(function(){
+		// alert('bb');
+		$(this).addClass('menuli').siblings().removeClass('menuli');
+			
+	})
+})
+</script>
+
+
+</body>
+</html>

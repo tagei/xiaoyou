@@ -1,0 +1,117 @@
+*{margin: 0;padding: 0;border: 0;list-style: 0;}
+.left{
+	
+	width:20%;
+	height: 100%;	
+	float: left;
+	box-sizing:border-box;
+}
+.leftmenu ul{
+	
+	margin-top: -100px;
+}
+.leftmenu ul li{
+	margin-top: 50px;
+	margin-left: 90px;
+	list-style: none;
+}
+.leftmenu ul li a{
+	text-decoration: none;
+	color: #3c3c3c;
+	font-size: 18px;
+	font-weight: bold;
+}
+.leftlogo img{
+	margin: 100px;
+}
+.right{
+	color: #B0C4DE ;
+	background:url(../img_files/school.png)bottom no-repeat;
+	width: 80%;
+	height: 100%;	
+	float: left;
+	box-sizing:border-box;
+}
+.menuli{
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #ccc;
+	
+	background:	#2F4F4F;
+}
+.leftmenu li.menuli a{
+color: #FFFFFF;
+}
+
+.box1{
+	list-style: none;
+	width: 100%;
+	height: 33.3%;	
+	cursor: pointer;
+	background: #1E90FF url(../img_files/tel1.png)center no-repeat;
+	opacity: 1.0;
+	filter:alpha(opacity=100);
+
+}
+.box1:hover{
+	opacity: 0.3;
+	filter:alpha(opacity=30);
+}
+.box2{
+	list-style: none;
+	width: 100%;
+	height: 33.3%;
+	cursor: pointer;	
+	background:#6A5ACD url(../img_files/tel2.png)center no-repeat;
+	opacity: 1.0;
+	filter:alpha(opacity=100);
+}
+.box2:hover{
+	opacity: 0.3;
+	filter:alpha(opacity=30);
+}
+.box3{
+	list-style: none;
+	width: 100%;
+	height: 33.3%;	
+	cursor: pointer;
+	background:#DA70D6 url(../img_files/tel3.png)center no-repeat;
+	opacity: 1.0;
+	filter:alpha(opacity=100);
+}
+.box3:hover{
+	opacity: 0.3;
+	filter:alpha(opacity=30);
+}
+.navbar p{
+	text-align: center;
+	height: 100px;
+	line-height: 50px;
+}
+h1{
+	background: url(../img_files/logo_big.png)no-repeat ;
+	margin: 50px 100px 0 400px;
+	width: 297px;
+	height: 161px;
+}
+.center ul{
+	margin-top: 30px;
+	margin-left: 200px;
+}
+.center li{
+	float: left;
+	margin-left:60px;	
+}
+.center li img{
+	margin: 0 auto;
+	opacity: 1.0;
+	filter:alpha(opacity=100);
+}
+.center li img:hover{
+
+	opacity: 0.3;
+	filter:alpha(opacity=30);
+}
+
