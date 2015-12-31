@@ -6,9 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
 </head>
-<body>
+<body onload="window.setInterval(lunhuan,3000)">
 <div class="rightmenu1">
-	<div class="navbar">
+	<div class="navbar" id="navbar">
 		<ul>
 			<li>
 				<div class="navbar_pic" style="background:#1E90FF;">
@@ -33,9 +33,12 @@
 			</li>
 		</ul>
 	</div>
-<div class="quwei">
-	<div class="con con1">		
-	<dl class="find">
+	
+<div class="quwei" id="find">
+	<div class="content1">
+	<div class="con con1" >	
+	
+	<dl class="find" >
 		<dt></dt>		
 		<dd>
 			<ul>
@@ -46,7 +49,7 @@
 					<img src="img_files/1.png">
 				</li>
 			</ul>
-			<ol>
+			<ol class="findol">
 				<li class="olli" style="left: 10px;position: absolute;top: 300px;">没感觉</li>
 				<span><img src="img_files/demo.gif"></span>
 				<li class="ollimg" style="left:100px;z-index:888;position:absolute;top:300px;">
@@ -55,17 +58,100 @@
 				<li class="olli" style="left: 185px;position: absolute;top:300px;">么么哒</li>
 			</ol>
 		</dd>
-	</dl>
-</div>
+	</dl>	
 	<div class="findp">
 		<p><h2>众里寻Ta</h2>
 			<br/>
 			于人海茫茫，你我相遇</p>
 	</div>
-</div>	
-
-
-
 </div>
+</div>	
+	<div class="content1" style="display:none;">
+	<div class="con con1" >		
+	<dl class="find">
+		<dt></dt>		
+		<dd >
+			<ul>
+				<li class="tel1">
+					<img src="img_files/tel1.png">
+				</li>
+				<li class="img2">
+					<img src="img_files/miyoubg.png">
+					
+				</li>
+				<li class="img3">
+					<img src="img_files/miyou1.png">
+					
+				</li>
+			</ul>
+		
+		</dd>
+	</dl>	
+</div>
+	<div class="findp">
+		<p><h2>蜜柚</h2>
+			<br/>
+			蜜而不酸</p>
+	</div>
+</div>
+<div class="content1" style="display:none;">
+	<div class="con con1" >		
+	<dl class="find">
+		<dt></dt>		
+		<dd>
+			<ul>
+				<li class="tel1">
+					<img src="img_files/tel1.png">
+				</li>
+				<li class="img2">
+					<img id="img" src="img_files/fengmian1.png">
+					
+				</li>
+			</ul>
+			<ol class="lun">
+				<li id="list-0" class="listsyle"></li>
+				<li id="list-1"></li>
+				<li id="list-2"></li>
+				<li id="list-3"></li>
+
+			</ol>
+		</dd>
+	</dl>	
+</div>
+</div>
+</div>
+<script type="text/javascript" src="jquery.js"></script>
+<script>
+$(function(){
+	$('#navbar li').click(function(){
+		// alert('bb');
+		var _id = $(this).index();
+		// alert(_id);
+	$('#find').children('.content1').eq(_id).fadeIn('fast').siblings('.content1').css('display','none');
+	})
+	$('#button1').click(function(){
+		$('#navbar li').css('display','none');
+	})
+})
+var arr=['img_files/fengmian1.png','img_files/fm2.png','img_files/fm3.png','img_files/fengmian5.png'];
+var i = 0;
+var ob,obk;
+function lunhuan(){
+if(i > 3){
+	i = 0;
+}
+ob = document.getElementById("img");
+ob.src = arr[i];
+for( var j = 0;j<=3;j++){
+	document.getElementById("list-"+j).style.backgroundColor = '';
+	document.getElementById("list-"+j).style.color = 'black';
+}
+obk = document.getElementById("list-"+i);
+obk.style.backgroundColor = '#ccc';
+obk.style.color = '';
+i++;
+}	
+
+</script>	
 </body>
 </html>

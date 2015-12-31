@@ -9,7 +9,7 @@
 <body>
 <div class="rightmenu2">
 
-	<div class="navbar">
+	<div class="navbar" id="navbar">
 		<ul>
 			<li>
 				<div class="navbar_pic" style="background:#FFD700;">
@@ -39,14 +39,33 @@
 	<div class="gsjs">		
 		<img src="img_files/tv_bg.png" width="80%">
 	<div class="about" id="warp">
-		<div class="txet" id="text1">
+		<div class="txet" >
 			<h2>公司介绍</h2>
 			<p>北京小柚科技有限公司是一家专注于互联网业务的公司，启动于2013年12月，并在2014年3月推出一款心愿社交产品南极网(nanji.com)，2014年，公司完成新一轮战略融资，进行资本重组后，重新启航，专注发力移动互联网业务。2014年9月，我们将推出第一款移动社交产品-柚子(暂定名)。</p>
 
 		</div>
+		<div class="txet" style="display:none;"  >
+			<h2>产品介绍</h2>
+			<p>北京yyub，我们将推出第一款移动社交产品-柚子(暂定名)。</p>
 
+		</div>
+		<div class="txet" style="display:none;" >
+			<h2>人才招聘</h2>
+			<p>工程师2名</p>
+
+		</div>
 	</div>
 
 </div>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#navbar li').click(function(){
+			var _id = $(this).index();
+			//alert(_id);
+			 $('#warp').children('.txet').eq(_id).fadeIn('fast').siblings('.txet').css('display','none');
+		})
+	})
+</script>
 </body>
 </html>

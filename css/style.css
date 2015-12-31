@@ -122,6 +122,7 @@ iframe{
 	width:80%;
 	height: 100%;
 }
+/*柚点趣味*/
 .rightmenu1{
 	width: 100%;
 	height: 100%;
@@ -188,16 +189,13 @@ iframe{
 /*左边背景图*/
 .quwei{
 	width: 70%;
-	height: 100%;
-	
-	
+	height: 100%;	
 	float: left;
 	box-sizing:border-box;
 }
 
 
-.find ul li.tel1 img {
-	/*background:  url(../img_files/tel1.png)no-repeat ;*/
+.find ul li.tel1 img {	
 	width: 300px;
 	height: 530px;
 	background: #fff;
@@ -214,26 +212,66 @@ iframe{
 	margin-top: -240px;
 	margin-left: 25px;
 }
+/*图片轮播*/
+
+.find ul li.img2 img{
+	
+	width: 270px;
+	height: 400px;
+	margin-top: -240px;
+	margin-left: 20px;
+	position: relative;
+}
+.img2 img{
+	border: 0;
+}
+.find .lun{
+	position: absolute;
+	z-index: 1000;
+	margin-top: -100px;
+	margin-left: 80px;
+}
+.find .lun li{
+	
+	width: 1px;
+	height: 1px;
+	border-radius: 50%;
+	float: left;
+	
+
+}
+/*结束*/
+.find .listyle{
+	background: #fff;
+}
+.find ul li.img3{
+	
+	width: 100px;
+	height: 30px;
+	margin-top: -300px;
+	margin-left: 100px;
+}
+
 .con dl{
 	width: 248px;
 	height: 374px;
 	position: relative;
 	top: 50px;
-	left: 200px;
+	left: 300px;
 }
-.find dd ol li.olli{
+.find dd .findol li.olli{
 	width: 50px;
 	height: 50px;	
 	border-radius: 50%;
 	background: #708090;
 }
-.find dd ol li.ollimg {
+.find dd .findol li.ollimg {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
 	background: #32CD32;
 }
-.find  dd ol li{
+.find  dd .findol li{
 	height: 50px;
 	font-size: 12px;
 	color: #fff;
@@ -244,9 +282,9 @@ iframe{
 	float: left;
 	cursor: pointer;
 	margin: 0 16px;
-	top: 300px;
+	
 }
-.find dd ol span{
+.find dd .findol span{
 	position: absolute;
 	top: 320px;
 	left: 70px;
@@ -257,15 +295,23 @@ iframe{
 	height: 100px;
 	line-height: 50px;
 	margin-right: 300px;
-	margin-left: 30px;
-	margin-top: -100px;
+	margin-left: 50px;
+	margin-top: -200px;
 	padding:10px;
 	color: #fff;
+}
+/*趣味结束*/
+/*柚点娶人*/
+.rightmenu2{
+	width: 100%;
+	height: 100%;
+	background: #FFD700;
 }
 .gsjs{
 	margin:100px auto;
 
 }
+/*公司介绍*/
 .txet{
 	
 	width: 400px;
@@ -280,16 +326,20 @@ iframe{
 	margin-top: 130px;
 	margin-left: 100px;
 }
-.rightmenu2{
-	width: 100%;
-	height: 100%;
-	background: #FFD700;
-}
+/**/
+
+
+/*柚点趣事*/
 .rightmenu3{
 	width: 100%;
 	height: 100%;
 	background: #FFC0CB;
 }
+
+ .iframe{
+ 	width: 100%;
+ 	height: 100%;
+ }
 .navbar_pic1{
 	position: relative;
 	width: 100%;
@@ -363,6 +413,7 @@ h3{
 	margin-top: 20px;
 	margin-left: 10px;
 }
+/*柚个坐标*/
 .rightmenu4{
 	width: 100%;
 	height: 100%;
@@ -400,15 +451,18 @@ h3{
  	cursor: pointer;
  	font-weight: bold;
  }
- .iframe{
- 	width: 100%;
- 	height: 100%;
- }
+/*柚园计划*/
  .quweio{
 	width: 70%;
 	height: 100%;
 	margin: 100px auto;
-	
 	float: left;
 	box-sizing:border-box;
+	
+}
+.txet img{
+	margin-top: 89px;
+	width: 430px;	
+	margin-left: -38px;
+
 }
