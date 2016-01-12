@@ -1,19 +1,127 @@
-*{margin: 0;padding: 0;border: 0;list-style: 0;}
-dd,dt,dl,ul,li{list-style: none;}
-.left{
+/*初始化*/
+body,span,div,img,ol,h1,h2,h3,h4,h5,h6,dd,dt,dl,ul,li{margin: 0;padding: 0;border: 0;list-style: none;}
+blockquote,q {quotes: none;}
+blockquote:before,blockquote:after,q:before,q:after {content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+/*公共样式*/
+.clearfix:after,.cf:after{content: "";clear: both;display: block;visibility: hidden;height: 0;}
+.clearfix,.cf{zoom:1;}
+.clear,.cl{clear: both;}
+iframe{
+
+	width:1145px;
+	height:650px;
+}
+
+/*设置图片*/
+.menu{
+	position: relative;
+	width: 100%;
+	height:33.3%;
+	cursor: pointer;
+	text-align: center;	
+	border: 1px solid #fff;
+}
+
+.menu img{
 	
-	width:20%;
+	margin-top:35px;
+}
+/*设置a和文字不可见*/
+.centerpic a,.centerpic span{
+	display: none;
+	text-decoration: none;
+	font-weight: bold;
+}
+/*鼠标经过时a的定位*/
+.centerpic:hover a.now{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	left: 0;
+	display: block;
+}
+/*设置显示文字定位*/
+.centerpic:hover span{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	width: 100%;
+	height:100%;
+	z-index: 10;
+	height: 100%;
+	line-height: 130px;
+	text-align: center;
+	background: #2F4F4F;
+	filter:alpha(opacity=70);/*设置背景半透明*/
+	-moz-opacity:0.8;/*设置背景文字透明度*/
+	opacity:0.8;
+}
+.content{
+	margin:80px auto;
+
+}
+.right{
+	width: 100%;
+	height: 100%;}
+/*公共样式结束*/
+/*main*/
+.main{
+	color: #B0C4DE ;
+	width: 100%;
 	height: 100%;	
 	float: left;
+	box-sizing:border-box;	
+}
+.pic{
+	position: relative;
+	width: 129px;
+	height: 130px;	
+}
+
+h1{
+	background: url(../img_files/logo_big.png)no-repeat ;
+	margin: 50px 100px 0 400px;
+	width: 297px;
+	height: 161px;
+}
+.school img{	
+	margin-top:60px; 
+}
+.center ul{
+	margin-top: 30px;
+	margin-left: 200px;
+}
+.center li{
+	float: left;
+	margin-left:60px;	
+}
+
+/*left*/
+.left{
+	
+	width:200px;
+	height: 100%;	
+	float: left;	
 	box-sizing:border-box;
 }
+.leftlogo{
+	width: 88px;
+	height: 150px;
+	margin: 50px auto;
+}
+
 .leftmenu ul{
-	
-	margin-top: -100px;
+	width: 200px;
+	height: 350px;
+	margin-left:50px;
 }
 .leftmenu ul li{
-	margin-top: 50px;
-	margin-left: 90px;
+	margin-top: 40px;
 	list-style: none;
 }
 .leftmenu ul li a{
@@ -45,156 +153,27 @@ dd,dt,dl,ul,li{list-style: none;}
 .hvr-float:active {
   transform: translateY(-10px);
 }
-.leftlogo img{
-	margin: 100px;
-}
-.right{
-	color: #B0C4DE ;
-	background:url(../img_files/school.png)bottom no-repeat;
-	width: 100%;
-	height: 100%;	
-	float: left;
-	box-sizing:border-box;
-}
-
-
 .leftmenu li.button a{
 color: #FFFFFF;
 }
-
-h1{
-	background: url(../img_files/logo_big.png)no-repeat ;
-	margin: 50px 100px 0 400px;
-	width: 297px;
-	height: 161px;
-}
-.center ul{
-	margin-top: 30px;
-	margin-left: 200px;
-}
-.center li{
-	float: left;
-	margin-left:60px;	
-}
-
-/*设置图片*/
-.centerpic{
-	position: relative;
-	width: 129px;
-	height: 130px;
-	cursor: pointer;	
-}
-/*设置a和文字不可见*/
-.centerpic a,.centerpic span{
-	display: none;
-	text-decoration: none;
-	font-weight: bold;
-}
-/*鼠标经过时a的定位*/
-.centerpic:hover a.now{
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 100;
-	left: 0;
-	display: block;
-}
-/*设置显示文字定位*/
-.centerpic:hover span{
-	display: block;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	color: #fff;
-	width: 129px;
-	height: 130px;
-	z-index: 10;
-	height: 130px;
-	line-height: 130px;
-	text-align: center;
-	background: #2F4F4F;
-	filter:alpha(opacity=70);/*设置背景半透明*/
-	-moz-opacity:0.8;/*设置背景文字透明度*/
-	opacity:0.8;
-}
-iframe{
-	width:80%;
-	height: 100%;
-}
 /*柚点趣味*/
-.rightmenu1{
-	width: 100%;
-	height: 100%;
-	background: #00BFFF;
-}
-
 .navbar{
 	width: 30%;
 	height: 100%;
 	box-sizing:border-box;
 	float: left;
-	
-
 }
-
-/*设置图片*/
-.navbar_pic{
-	position: relative;
-	width: 100%;
-	height:33.3%;
-	cursor: pointer;
-	text-align: center;	
-}
-.navbar_pic img{
-	
-	margin-top:35px;
-}
-/*设置a和文字不可见*/
-.navbar_pic a,.navbar_pic span{
-	display: none;
-	text-decoration: none;
-	font-weight: bold;
-
-}
-/*鼠标经过时a的定位*/
-.navbar_pic:hover a.now{
-	position: absolute;
-	top: 0;
+.content1{
 	width: 100%;
 	height: 100%;
-	z-index: 100;
-	left: 0;
-	display: block;
-
 }
-/*设置显示文字定位*/
-.navbar_pic:hover span{
-	display: block;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	color: #fff;
-	width: 100%;
-	height:100%;
-	z-index: 10;
-	height: 100%;
-	line-height: 130px;
-	text-align: center;
-	background: #2F4F4F;
-	filter:alpha(opacity=70);/*设置背景半透明*/
-	-moz-opacity:0.8;/*设置背景文字透明度*/
-	opacity:0.8;
-}
-/*左边背景图*/
+/*右边背景图*/
 .quwei{
 	width: 70%;
 	height: 100%;	
 	float: left;
 	box-sizing:border-box;
 }
-
-
 .find ul li.tel1 img {	
 	width: 300px;
 	height: 530px;
@@ -221,9 +200,6 @@ iframe{
 	margin-top: -240px;
 	margin-left: 20px;
 	position: relative;
-}
-.img2 img{
-	border: 0;
 }
 .find .lun{
 	position: absolute;
@@ -289,31 +265,24 @@ iframe{
 	top: 320px;
 	left: 70px;
 }
-.findp {
-	
+.findp {	
 	width: 150px;
 	height: 100px;
 	line-height: 50px;
 	margin-right: 300px;
-	margin-left: 50px;
+	margin-left: 100px;
 	margin-top: -200px;
 	padding:10px;
 	color: #fff;
 }
 /*趣味结束*/
-/*柚点娶人*/
+/*公司介绍*/
 .rightmenu2{
 	width: 100%;
 	height: 100%;
 	background: #FFD700;
 }
-.gsjs{
-	margin:100px auto;
-
-}
-/*公司介绍*/
-.txet{
-	
+.txet{	
 	width: 400px;
 	height: 300px;
 	position: absolute;
@@ -326,78 +295,21 @@ iframe{
 	margin-top: 130px;
 	margin-left: 100px;
 }
-/**/
-
-
 /*柚点趣事*/
 .rightmenu3{
 	width: 100%;
 	height: 100%;
 	background: #FFC0CB;
 }
-
- .iframe{
- 	width: 100%;
- 	height: 100%;
- }
-.navbar_pic1{
-	position: relative;
-	width: 100%;
-	height:33.3%;
-	cursor: pointer;
-	text-align: center;	
-	border: 1px solid #fff;
-}
-.navbar_pic2{
-	position: relative;
-	width: 100%;
-	height:66.6%;
-	cursor: pointer;
-	text-align: center;	
-}
-.navbar_pic1 img{
-	
-	margin-top:35px;
-}
-.navbar_pic1 a,.navbar_pic span{
-	display: none;
-	text-decoration: none;
-	font-weight: bold;
-
-}
-/*鼠标经过时a的定位*/
-.navbar_pic1:hover a.nav{
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 100;
-	left: 0;
-	display: block;
-
-}
-/*设置显示文字定位*/
-.navbar_pic1:hover span{
-	display: block;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	color: #fff;
-	width: 100%;
-	height:100%;
-	z-index: 10;
-	height: 100%;
-	line-height: 130px;
-	text-align: center;
-	background: #2F4F4F;
-	filter:alpha(opacity=70);/*设置背景半透明*/
-	-moz-opacity:0.8;/*设置背景文字透明度*/
-	opacity:0.8;
-}
 .gushi{
 	margin: 0 auto;
 	background: #fff;
 }
+ .iframe{
+ 	margin-left: 10px;
+ 	width: 100%;
+ 	height: 100%;
+ }
 h3{
 	padding-top: 20px;
 }
@@ -439,12 +351,10 @@ h3{
     text-align: center;
     margin-right: 500px;
     top: 360px;
-  }
-.address i{
-    cursor: pointer;
+     cursor: pointer;
     background: #e4e4e4;
     position: absolute;
- }
+  }
  .address i:hover{
  	color: #fff;
  	background: #778899;
@@ -460,9 +370,45 @@ h3{
 	box-sizing:border-box;
 	
 }
-.txet img{
-	margin-top: 89px;
-	width: 430px;	
-	margin-left: -38px;
+.con_menu{width: 100%;
+		height: 100%;}
 
+.text-img{
+	margin-top: 71px;
+	width: 460px;	
+	margin-left: -30px;
 }
+
+.dashi{
+	position:absolute;
+	width: 410px;
+	height: 255px;
+	text-align: left;
+	margin-top: 200px;
+	background: #fff;
+	margin-left: 90px;
+}
+.dashi img{float: left;
+		margin-top: 80px;}
+.dashi_content{
+	float: left;
+	padding-left: 50px;
+	margin-top: 40px;
+	font-size: 14px;
+	color: #3c3c3c;
+	width: 200px;
+}
+
+.form input{
+	width: 120px;
+	height: 25px;
+}
+.form ul li{margin-top: 20px;}
+.form label{width: 70px;}
+.btn{width: 50px;
+	height: 30px;
+	cursor: pointer;
+	background:#EEE;
+	margin-top: 10px;
+	margin-left: 60px;}
+.btn:hover{background: #7F7F7F;}

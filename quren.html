@@ -12,21 +12,21 @@
 	<div class="navbar" id="navbar">
 		<ul>
 			<li>
-				<div class="navbar_pic" style="background:#FFD700;">
+				<div class="centerpic menu" style="background:#FFD700;">
 					<img src="img_files/aboutus.png"/>
 					<span>公司介绍</span>
 					<a href="#" class="nav">&nbsp;</a>
 				</div>
 			</li>
 			<li>
-				<div class="navbar_pic" style="background:#7CFC00;">
+				<div class="centerpic menu" style="background:#7CFC00;">
 					<img src="img_files/quren.png"/>
 					<span>产品介绍</span>
 					<a href="#" class="nav">&nbsp;</a>
 				</div>
 			</li>
 			<li>
-				<div class="navbar_pic" style="background:#7B68EE;">
+				<div class="centerpic menu" style="background:#7B68EE;">
 					<img src="img_files/jiaru.png"/>
 					<span>加入我们</span>
 					<a href="#" class="nav">&nbsp;</a>
@@ -36,22 +36,27 @@
 	</div>
 	
 <div class="quwei">
-	<div class="gsjs">		
+	<div class="content">		
 		<img src="img_files/tv_bg.png" width="80%">
 	<div class="about" id="warp">
 		<div class="txet" >
 			<h2>公司介绍</h2>
-			<p>北京小柚科技有限公司是一家专注于互联网业务的公司，启动于2013年12月，并在2014年3月推出一款心愿社交产品南极网(nanji.com)，2014年，公司完成新一轮战略融资，进行资本重组后，重新启航，专注发力移动互联网业务。2014年9月，我们将推出第一款移动社交产品-柚子(暂定名)。</p>
+			<p>
+				北京小柚科技有限公司是一家专注于互联网业务的公司，启动于2013年12月，并在2014年3月推出一款心愿社交产品南极网(nanji.com)，2014年，公司完成新一轮战略融资，进行资本重组后，重新启航，专注发力移动互联网业务。2014年9月，我们将推出第一款移动社交产品-柚子(暂定名)。
+			</p>
 
 		</div>
 		<div class="txet" style="display:none;"  >
 			<h2>产品介绍</h2>
-			<p>北京yyub，我们将推出第一款移动社交产品-柚子(暂定名)。</p>
-
+			<p>
+				小柚是北京小柚科技有限公司于2014年9月推出的一款针对校园用户的移动社交产品。在小柚中，我们颠覆了传统社交app中的搭讪模式和全局对话模式，力求通过更简单有效的方式帮助人们更好的认识同校、同城甚至其他高校的人。		
+			</p>
 		</div>
 		<div class="txet" style="display:none;" >
 			<h2>人才招聘</h2>
-			<p>工程师2名</p>
+			<p>
+				在这里，没有逼逼仄仄的办公室环境，没有勾心斗角的办公室氛围，因为我们年轻，因为我们崇尚自由与肆意，我们提供可口的午餐、水果和下午茶，茶水间咖啡机和沙发永远彰显着惬意，我们提供满是绿植的办公室，时不时乱入的大学学妹，满是温暖的生日会和小礼物…
+			</p>
 
 		</div>
 	</div>
@@ -64,6 +69,7 @@
 			var _id = $(this).index();
 			//alert(_id);
 			 $('#warp').children('.txet').eq(_id).fadeIn('fast').siblings('.txet').css('display','none');
+
 		})
 	})
 </script>
